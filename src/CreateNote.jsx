@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 const CreateNote = (props) => {
+  const [expand, setExpand] = useState(false);
+
   const [note, setNote] = useState({
     title: "",
     content: "",
@@ -30,18 +32,28 @@ const CreateNote = (props) => {
     });
   };
 
+  const expandIt = () => {
+    setExpand(true);
+  };
+
+  const btoNormal = () => {
+    setExpand(false);
+  };
+
   return (
     <>
       <div className="main_note">
         <form action="">
-          <input
-            className="in1"
-            name="title"
-            type="text"
-            value={note.title}
-            onChange={inputEvent}
-            placeholder="Title"
-          />
+          {expand ? (
+            <input
+              className="in1"
+              name="title"
+              type="text"
+              value={note.title}
+              onChange={inputEvent}
+              placeholder="Title"
+            />
+          ) : null}
           <textarea
             id=""
             name="content"
@@ -49,11 +61,15 @@ const CreateNote = (props) => {
             rows="10"
             value={note.content}
             onChange={inputEvent}
+            onClick={expandIt}
+            onDoubleClick={btoNormal}
             placeholder="Write a note..."
           ></textarea>
-          <button onClick={addEvent} className="btn">
-            +
-          </button>
+          {expand ? (
+            <button onClick={addEvent} className="btn">
+              +
+            </button>
+          ) : null}
         </form>
       </div>
     </>
