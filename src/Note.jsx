@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
 
-const Note = () => {
+const Note = (props) => {
   return (
     <>
       <div className="note">
-        <h4 className="p2">Title</h4>
+        <h4 className="p2">{props.title}</h4>
         <br />
-        <p className="p2">this is the content</p>
+        <div className="div2">
+          <p className="p2">{props.content}</p>
+        </div>
         <button className="b1">
           <i className="material-icons ic1">delete</i>
         </button>
