@@ -3,7 +3,7 @@
   border-radius: 4rem;
   margin-left: 4rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   float: left;
 }
 
@@ -16,4 +16,16 @@
 .he1 {
   padding: 1.5rem;
   margin-left: 9rem;
+}
+
+p {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
 }
