@@ -5,10 +5,11 @@
   margin-top: 1rem;
   margin-bottom: 1.8rem;
   float: left;
+  box-shadow: 0px 0px 7px 5px #ffffff;
 }
 
 .header {
-  background-color: #e1d20a;
+  background-color: #2fb0a3;
   position: relative;
   bottom: 2rem;
 }
@@ -35,7 +36,11 @@ h1 {
   width: 231.5px;
   top: 7rem;
   border: none;
-  box-shadow: inset 0px -15px 20px 0px #18a4fe;
+  box-shadow: 0px -20px 1px 1px #11c0ad;
+}
+
+.in1:hover {
+  background: #11c0ad;
 }
 
 textarea {
@@ -67,7 +72,7 @@ form {
 .note {
   margin-left: 3rem;
   box-shadow: 0px 0px 20px 1px grey;
-  width: 13rem;
+  width: inherit;
   line-height: 2px;
   padding: 1rem;
 }
@@ -86,4 +91,30 @@ form {
 .note {
   margin: 1rem;
   float: left;
+}
+
+.btn:hover {
+  color: rgb(251, 73, 18);
+  background-color: #2fb0a3;
+  border: none;
+  font-size: 29px;
+}
+
+textarea:hover {
+  background-color: #2fb0a3;
+  color: white;
+  border: none;
+  box-shadow: -16px 17px 2px 5px #e6e6e6;
+}
+
+.note:hover {
+  background-color: #2fb0a3;
+  color: white;
+  border: none;
+  box-shadow: -16px 17px 2px 5px #e6e6e6;
+}
+
+.b1:hover {
+  color: red;
+  box-shadow: 2px 2px 0px 2px #545549;
 }
